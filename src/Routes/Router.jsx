@@ -2,6 +2,7 @@ import {
     createBrowserRouter,
 } from "react-router-dom";
 import UserLayout from "../Layouts/User/UserLayout";
+import Lessons from "../Pages/Users/Lessons/Lessons";
 
 export const router = createBrowserRouter([
     {
@@ -10,6 +11,7 @@ export const router = createBrowserRouter([
         children: [
             {
                 path: "/lessons",
+                element: <Lessons/>
 
             },
             {

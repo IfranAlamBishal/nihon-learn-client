@@ -1,0 +1,177 @@
+[
+    {
+      "lessonNo": 1,
+      "word": "こんにちは",
+      "pronunciation": "Konnichiwa",
+      "meaning": "Hello",
+      "whenToSay": "Used for greeting during the daytime."
+    },
+    {
+      "lessonNo": 1,
+      "word": "さようなら",
+      "pronunciation": "Sayounara",
+      "meaning": "Goodbye",
+      "whenToSay": "Used for saying goodbye."
+    },
+    {
+      "lessonNo": 1,
+      "word": "ありがとう",
+      "pronunciation": "Arigatou",
+      "meaning": "Thank you",
+      "whenToSay": "Used to express gratitude."
+    },
+    {
+      "lessonNo": 1,
+      "word": "はい",
+      "pronunciation": "Hai",
+      "meaning": "Yes",
+      "whenToSay": "Used to affirm or agree."
+    },
+    {
+      "lessonNo": 1,
+      "word": "いいえ",
+      "pronunciation": "Iie",
+      "meaning": "No",
+      "whenToSay": "Used to decline or disagree."
+    },
+    {
+      "lessonNo": 2,
+      "word": "おはよう",
+      "pronunciation": "Ohayou",
+      "meaning": "Good morning",
+      "whenToSay": "Used to greet someone in the morning."
+    },
+    {
+      "lessonNo": 2,
+      "word": "こんばんは",
+      "pronunciation": "Konbanwa",
+      "meaning": "Good evening",
+      "whenToSay": "Used to greet someone in the evening."
+    },
+    {
+      "lessonNo": 2,
+      "word": "すみません",
+      "pronunciation": "Sumimasen",
+      "meaning": "Excuse me / Sorry",
+      "whenToSay": "Used to apologize or to get someone's attention."
+    },
+    {
+      "lessonNo": 2,
+      "word": "おねがいします",
+      "pronunciation": "Onegaishimasu",
+      "meaning": "Please",
+      "whenToSay": "Used to make polite requests."
+    },
+    {
+      "lessonNo": 2,
+      "word": "いらっしゃいませ",
+      "pronunciation": "Irasshaimase",
+      "meaning": "Welcome",
+      "whenToSay": "Used by staff to welcome customers."
+    },
+    {
+      "lessonNo": 3,
+      "word": "わかりました",
+      "pronunciation": "Wakarimashita",
+      "meaning": "Understood",
+      "whenToSay": "Used to confirm understanding."
+    },
+    {
+      "lessonNo": 3,
+      "word": "わかりません",
+      "pronunciation": "Wakarimasen",
+      "meaning": "I don't understand",
+      "whenToSay": "Used to indicate lack of understanding."
+    },
+    {
+      "lessonNo": 3,
+      "word": "いただきます",
+      "pronunciation": "Itadakimasu",
+      "meaning": "Let's eat",
+      "whenToSay": "Said before eating a meal to show gratitude."
+    },
+    {
+      "lessonNo": 3,
+      "word": "ごちそうさまでした",
+      "pronunciation": "Gochisousama deshita",
+      "meaning": "Thank you for the meal",
+      "whenToSay": "Said after eating a meal to show appreciation."
+    },
+    {
+      "lessonNo": 3,
+      "word": "どういたしまして",
+      "pronunciation": "Dou itashimashite",
+      "meaning": "You're welcome",
+      "whenToSay": "Used to respond to 'Thank you'."
+    },
+    {
+      "lessonNo": 4,
+      "word": "といれ",
+      "pronunciation": "Toire",
+      "meaning": "Toilet",
+      "whenToSay": "Used to ask for the restroom."
+    },
+    {
+      "lessonNo": 4,
+      "word": "いくら",
+      "pronunciation": "Ikura",
+      "meaning": "How much?",
+      "whenToSay": "Used to ask about the price of something."
+    },
+    {
+      "lessonNo": 4,
+      "word": "これ",
+      "pronunciation": "Kore",
+      "meaning": "This",
+      "whenToSay": "Used to refer to an object near the speaker."
+    },
+    {
+      "lessonNo": 4,
+      "word": "それ",
+      "pronunciation": "Sore",
+      "meaning": "That",
+      "whenToSay": "Used to refer to an object near the listener."
+    },
+    {
+      "lessonNo": 4,
+      "word": "あれ",
+      "pronunciation": "Are",
+      "meaning": "That over there",
+      "whenToSay": "Used to refer to an object far from both speaker and listener."
+    },
+    {
+      "lessonNo": 5,
+      "word": "おげんきですか",
+      "pronunciation": "Ogenki desu ka",
+      "meaning": "How are you?",
+      "whenToSay": "Used to ask someone how they are."
+    },
+    {
+      "lessonNo": 5,
+      "word": "げんきです",
+      "pronunciation": "Genki desu",
+      "meaning": "I'm fine",
+      "whenToSay": "Used to respond positively about one's well-being."
+    },
+    {
+      "lessonNo": 5,
+      "word": "しつれいします",
+      "pronunciation": "Shitsurei shimasu",
+      "meaning": "Excuse me",
+      "whenToSay": "Used to politely excuse oneself."
+    },
+    {
+      "lessonNo": 5,
+      "word": "がんばって",
+      "pronunciation": "Ganbatte",
+      "meaning": "Do your best",
+      "whenToSay": "Used to encourage someone."
+    },
+    {
+      "lessonNo": 5,
+      "word": "よろしくおねがいします",
+      "pronunciation": "Yoroshiku onegaishimasu",
+      "meaning": "Please treat me well",
+      "whenToSay": "Used to make polite requests or introductions."
+    }
+  ]
