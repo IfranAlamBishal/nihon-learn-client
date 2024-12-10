@@ -1,13 +1,15 @@
 import { useEffect, useState } from "react";
 import useLessonsData from "../../../Hooks/useLessonsData";
 import { Helmet } from "react-helmet";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Pagination, Navigation } from 'swiper/modules';
+
+
 
 const Vocabularies = () => {
 
@@ -75,12 +77,28 @@ const Vocabularies = () => {
                                             <h1 className="mb-5 text-3xl md:text-4xl font-bold">({vocabulary.pronunciation})</h1>
                                             <h1 className="mb-5 text-3xl md:text-4xl font-bold">{vocabulary.meaning}</h1>
                                             <p className="mb-5">{vocabulary.whenToSay} </p>
-                                            {/* <button className="btn btn-primary">Get Started</button> */}
                                         </div>
                                     </div>
                                 </div>
                             </SwiperSlide>)
                         }
+
+                        <SwiperSlide>
+                            <div
+                                className="hero h-[400px] md:h-[600px]"
+                                style={{
+                                    backgroundImage: "url(https://i.ibb.co.com/0cR0VyT/card-bg.jpg)",
+                                }}>
+                                <div className="hero-overlay bg-opacity-20"></div>
+                                <div className="hero-content text-neutral-content text-center py-5">
+                                    <div className=" max-w-xs md:max-w-2xl text-[#3C3C3C]">
+                                        <h1 className="mb-5 text-[#D72638] text-4xl md:text-6xl font-extrabold">Congratulations!!</h1>
+                                        <h1 className="mb-5 text-3xl md:text-4xl font-bold">You have successfully Finished this lesson.</h1>
+                                        <Link to='/lessons' className="btn">Complete</Link>
+                                    </div>
+                                </div>
+                            </div>
+                        </SwiperSlide>
 
                     </Swiper>
                 </div>
