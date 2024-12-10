@@ -6,7 +6,7 @@ const UserLayout = () => {
     return (
         <div>
             <Nav />
-            <div className=" min-h-screen"><Outlet /></div>
+            <div className=" my-10"><Outlet /></div>
             <Footer />
         </div>
     );
