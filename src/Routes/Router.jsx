@@ -12,7 +12,9 @@ export const router = createBrowserRouter([
             {
                 path: "/lessons",
                 element: <Lessons/>
-
+            },
+            {
+                path:"/lessons/:lesson-no.",
             },
             {
                 path: "/tutorials",
