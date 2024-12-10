@@ -3,6 +3,7 @@ import {
 } from "react-router-dom";
 import UserLayout from "../Layouts/User/UserLayout";
 import Lessons from "../Pages/Users/Lessons/Lessons";
+import Vocabularies from "../Pages/Users/Vocabularies/Vocabularies";
 
 export const router = createBrowserRouter([
     {
@@ -14,7 +15,8 @@ export const router = createBrowserRouter([
                 element: <Lessons/>
             },
             {
-                path:"/lessons/:lesson-no.",
+                path:"/lessons/lesson-no/:no",
+                element: <Vocabularies/>
             },
             {
                 path: "/tutorials",
