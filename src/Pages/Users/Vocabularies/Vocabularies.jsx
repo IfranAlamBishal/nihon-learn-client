@@ -13,24 +13,24 @@ import { Pagination, Navigation } from 'swiper/modules';
 
 const Vocabularies = () => {
 
-    const lessonNo = useParams();
-    const lessonNum = lessonNo.no;
+    const { no: lessonNo} = useParams();
     const [loading, setLoading] = useState(true);
     const [vocabularies, setVocabularies] = useState([]);
     const [lessonsData] = useLessonsData();
 
     useEffect(() => {
-        if (lessonsData) {
-            const vocabularyData = lessonsData.find(lesson => lesson.lessonNumber == lessonNum);
-
-            setVocabularies(vocabularyData);
-            setLoading(false);
+        if (lessonNo && lessonsData) {
+            const vocabularyData = lessonsData.find(lesson => lesson.lessonNumber == lessonNo);
+            if(vocabularyData?.vocabulary?.length > 0){
+                setVocabularies(vocabularyData.vocabulary);
+                setLoading(false);
+            }  
         }
-    }, [lessonsData, lessonNum])
+    }, [lessonsData, lessonNo])
 
-    const vocabularyList = vocabularies.vocabulary;
+    // const vocabularyList = vocabularies.vocabulary;
 
-    // console.log(vocabularyList)
+    console.log(vocabularies)
 
     if (loading) {
         return (
@@ -52,7 +52,7 @@ const Vocabularies = () => {
                     <title>日本 Learn | Vocabularies</title>
                 </Helmet>
 
-                <h1 className=" text-2xl text-[#3C3C3C] font-semibold my-5"> Total Vocabularies: {vocabularyList.length}</h1>
+                <h1 className=" text-2xl text-[#3C3C3C] font-semibold my-5"> Total Vocabularies: {vocabularies.length}</h1>
 
                 <div className="py-5">
                     <Swiper
@@ -64,7 +64,7 @@ const Vocabularies = () => {
                         className="mySwiper"
                     >
                         {
-                            vocabularyList.map(vocabulary => <SwiperSlide key={vocabulary.word}>
+                            vocabularies.map(vocabulary => <SwiperSlide key={vocabulary.word}>
                                 <div
                                     className="hero h-[400px] md:h-[600px]"
                                     style={{
