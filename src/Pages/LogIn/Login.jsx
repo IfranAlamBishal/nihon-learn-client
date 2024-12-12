@@ -27,7 +27,7 @@ const Login = () => {
                     const alreadyUser = userData.find(user => user.email == userCredential.user.email)
                     if (!alreadyUser) {
                         const user = {
-                            name: userCredential.user.name,
+                            name: userCredential.user.displayName,
                             email: userCredential.user.email,
                             role: "user"
                         };
