@@ -16,7 +16,8 @@ const Nav = () => {
                     text: "You've successfully logged out.",
                     icon: "success"
                 });
-                
+                sessionStorage.clear();
+                navigate('/login');
             })
             .catch(error => {
                 Swal.fire({
@@ -24,9 +25,8 @@ const Nav = () => {
                     title: "Sorry !",
                     text: error.massage,
                 });
-                navigate('/login')
             })
-        }
+    }
 
     const navBtns = <>
         <li><Link to='/lessons'>Lessons</Link></li>
@@ -58,7 +58,7 @@ const Nav = () => {
                             {navBtns}
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-2xl md:text-3xl lg:text-4xl font-bold gap-0"><span className=" text-[#D72638]">日本</span> Learn</a>
+                    <Link className="btn btn-ghost text-2xl md:text-3xl lg:text-4xl font-bold gap-0"><span className=" text-[#D72638]">日本</span> Learn</Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 font-semibold text-lg text-[#D72638]">

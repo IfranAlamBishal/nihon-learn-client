@@ -1,6 +1,5 @@
 import {
     createBrowserRouter,
-    Navigate,
 } from "react-router-dom";
 import UserLayout from "../Layouts/User/UserLayout";
 import Lessons from "../Pages/Users/Lessons/Lessons";
@@ -8,6 +7,7 @@ import Vocabularies from "../Pages/Users/Vocabularies/Vocabularies";
 import Register from "../Pages/Register/Register";
 import Login from "../Pages/LogIn/Login";
 import ProtectedRoutes from "./ProtectedRoutes/ProtectedRoutes";
+import AdminLayout from "../Layouts/Admin/AdminLayout";
 
 export const router = createBrowserRouter([
     {
@@ -42,9 +42,10 @@ export const router = createBrowserRouter([
 
     {
         path: "dashboard",
+        element: <AdminLayout />,
         children: [
             {
-                path: "Users"
+                path: "users"
             },
             {
                 path: "manage_lessons"
@@ -56,8 +57,14 @@ export const router = createBrowserRouter([
                 path: "manage_vocabularies"
             },
             {
-                path: "add_vocabularies"
+                path: "add_vocabulary"
             },
+            {
+                path: "add_tutorial"
+            },
+            {
+                path: "manage_tutorials"
+            }
         ]
     }
 ]);

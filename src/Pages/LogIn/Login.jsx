@@ -5,6 +5,8 @@ import { FaEye, FaEyeSlash } from "react-icons/fa6";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 import Swal from "sweetalert2";
+import useAxios from "../../Hooks/useAxios";
+import useUserData from "../../Hooks/useUserData";
 
 const Login = () => {
 
@@ -12,27 +14,46 @@ const Login = () => {
     const [showPassword, setShowPassword] = useState(false);
     const { logIn } = useContext(AuthContext);
     const navigate = useNavigate();
+    const axiosSecure = useAxios();
+    const [userData, refetch] = useUserData();
 
     const onSubmit = data => {
-        
-            logIn(data.email, data.password)
-                .then(() => {
+
+        logIn(data.email, data.password)
+            .then((userCredential) => {
+                if(userData){
+
+                    const alreadyUser = userData.find(user => user.email == userCredential.user.email)
+                    if (alreadyUser) {
+                        const user = {
+                            name: userCredential.user.name,
+                            email: userCredential.user.email,
+                            role: "user"
+                        };
+                        axiosSecure.post('/register_user', user)
+                            .then(() => {
+                                refetch();
+                            })
+                    }
+    
                     Swal.fire({
                         icon: "success",
                         title: "Logged in!",
                         text: "You have successfully logged in!",
                     });
-                    navigate('/lessons');
-                })
+    
+                    alreadyUser.role == 'admin' ? navigate('/dashboard') : navigate('/lessons')
+                }
+            })
 
-                .catch(error => {
-                    Swal.fire({
-                        icon: "error",
-                        title: "Sorry !",
-                        text: error.message,
-                    });
+            .catch(error => {
+                Swal.fire({
+                    icon: "error",
+                    title: "Sorry !",
+                    text: error.message,
+                });
 
-                })
+            })
 
     };
 
