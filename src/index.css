@@ -1,9 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-body{
-    background: #FAF3E0;
-    margin: 0;
-    padding: 0;
-}

@@ -8,7 +8,7 @@ import Register from "../Pages/Register/Register";
 import Login from "../Pages/LogIn/Login";
 import ProtectedRoutes from "./ProtectedRoutes/ProtectedRoutes";
 import AdminLayout from "../Layouts/Admin/AdminLayout";
-import AdminRoutes from "./AdminRoutes/AdminRoutes";
+import Users from "../Pages/Admin/Users/Users";
 
 export const router = createBrowserRouter([
     {
@@ -47,10 +47,11 @@ export const router = createBrowserRouter([
 
     {
         path: "dashboard",
-        element: <AdminRoutes><AdminLayout /></AdminRoutes>,
+        element: <ProtectedRoutes><AdminLayout /></ProtectedRoutes>,
         children: [
             {
-                path: "users"
+                path: "users",
+                element: <Users />
             },
             {
                 path: "manage_lessons"

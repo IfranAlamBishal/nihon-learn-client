@@ -29,24 +29,24 @@ const AdminLayout = () => {
     }
 
     const handleLogOut = () => {
-            logOut()
-                .then(() => {
-                    Swal.fire({
-                        title: "Logged out!",
-                        text: "You've successfully logged out.",
-                        icon: "success"
-                    });
-                    sessionStorage.clear();
-                    navigate('/login');
-                })
-                .catch(error => {
-                    Swal.fire({
-                        icon: "error",
-                        title: "Sorry !",
-                        text: error.massage,
-                    });
-                })
-        }
+        logOut()
+            .then(() => {
+                Swal.fire({
+                    title: "Logged out!",
+                    text: "You've successfully logged out.",
+                    icon: "success"
+                });
+                sessionStorage.clear();
+                navigate('/login');
+            })
+            .catch(error => {
+                Swal.fire({
+                    icon: "error",
+                    title: "Sorry !",
+                    text: error.massage,
+                });
+            })
+    }
 
 
     const dashLinks = <ul className=" menu px-1 space-y-2 text-lg font-medium">
@@ -62,7 +62,6 @@ const AdminLayout = () => {
 
     return (
         <div className=" flex flex-col md:flex-row gap-10">
-
             {
                 greetingModal && (
                     <div className="modal modal-open">

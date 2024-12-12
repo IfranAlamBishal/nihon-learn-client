@@ -4,7 +4,7 @@ import Nav from "../../Shared/Nav/Nav";
 
 const UserLayout = () => {
     return (
-        <div>
+        <div className=" bg-[#FAF3E0]">
             <Nav />
             <div className=" min-h-96 my-10"><Outlet /></div>
             <Footer />

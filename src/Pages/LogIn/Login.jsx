@@ -17,6 +17,7 @@ const Login = () => {
     const axiosSecure = useAxios();
     const [userData, refetch] = useUserData();
 
+
     const onSubmit = data => {
 
         logIn(data.email, data.password)
@@ -24,7 +25,7 @@ const Login = () => {
                 if(userData){
 
                     const alreadyUser = userData.find(user => user.email == userCredential.user.email)
-                    if (alreadyUser) {
+                    if (!alreadyUser) {
                         const user = {
                             name: userCredential.user.name,
                             email: userCredential.user.email,
