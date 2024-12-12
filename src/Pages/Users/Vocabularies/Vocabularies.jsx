@@ -28,9 +28,8 @@ const Vocabularies = () => {
         }
     }, [lessonsData, lessonNo])
 
-    // const vocabularyList = vocabularies.vocabulary;
 
-    console.log(vocabularies)
+    // console.log(vocabularies)
 
     if (loading) {
         return (
@@ -39,7 +38,7 @@ const Vocabularies = () => {
                 <Helmet>
                     <title>日本 Learn | Vocabularies</title>
                 </Helmet>
-                <span className="loading loading-infinity w-36 text-[#D72638]"></span>
+                <span className="loading loading-infinity w-40 text-[#D72638]"></span>
             </div>
         );
     }
@@ -73,10 +72,10 @@ const Vocabularies = () => {
                                     <div className="hero-overlay bg-opacity-20"></div>
                                     <div className="hero-content text-neutral-content text-center py-5">
                                         <div className=" max-w-xs md:max-w-2xl text-[#3C3C3C]">
-                                            <h1 className="mb-5 text-[#D72638] text-4xl md:text-6xl font-extrabold">{vocabulary.word}</h1>
-                                            <h1 className="mb-5 text-3xl md:text-4xl font-bold">({vocabulary.pronunciation})</h1>
-                                            <h1 className="mb-5 text-3xl md:text-4xl font-bold">{vocabulary.meaning}</h1>
-                                            <p className="mb-5">{vocabulary.whenToSay} </p>
+                                            <h1 className="mb-5 text-[#D72638] text-5xl md:text-8xl font-extrabold">{vocabulary.word}</h1>
+                                            <h1 className="mb-5 text-2xl md:text-4xl font-bold">({vocabulary.pronunciation})</h1>
+                                            <h1 className="mb-5 text-2xl md:text-4xl font-bold">{vocabulary.meaning}</h1>
+                                            <p className="mb-5 text-xl font-semibold">{vocabulary.whenToSay} </p>
                                         </div>
                                     </div>
                                 </div>
@@ -92,8 +91,8 @@ const Vocabularies = () => {
                                 <div className="hero-overlay bg-opacity-20"></div>
                                 <div className="hero-content text-neutral-content text-center py-5">
                                     <div className=" max-w-xs md:max-w-2xl text-[#3C3C3C]">
-                                        <h1 className="mb-5 text-[#D72638] text-4xl md:text-6xl font-extrabold">Congratulations!!</h1>
-                                        <h1 className="mb-5 text-3xl md:text-4xl font-bold">You have successfully Finished this lesson.</h1>
+                                        <h1 className="mb-5 text-[#D72638] text-3xl md:text-6xl font-extrabold">Congratulations!!</h1>
+                                        <h1 className="mb-5 text-2xl md:text-4xl font-bold">You have successfully Finished this lesson.</h1>
                                         <Link to='/lessons' className="btn">Complete</Link>
                                     </div>
                                 </div>

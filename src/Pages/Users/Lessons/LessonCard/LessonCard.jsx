@@ -12,8 +12,8 @@ const LessonCard = ({ lesson }) => {
     }
 
     return (
-        <div>
-            <div className="card bg-[#D72638] text-white">
+        <div className=" flex flex-1">
+            <div className="card w-full bg-[#D72638] text-white">
                 <div className="card-body items-center text-center">
                     <h2 className="card-title text-2xl font-semibold">Lesson - {lessonNumber}</h2>
                     <p className=" text-lg font-medium">Lesson Name: {lessonName}</p>

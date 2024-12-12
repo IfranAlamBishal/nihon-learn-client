@@ -1,33 +1,40 @@
 import {
     createBrowserRouter,
+    Navigate,
 } from "react-router-dom";
 import UserLayout from "../Layouts/User/UserLayout";
 import Lessons from "../Pages/Users/Lessons/Lessons";
 import Vocabularies from "../Pages/Users/Vocabularies/Vocabularies";
+import Register from "../Pages/Register/Register";
+import Login from "../Pages/LogIn/Login";
+import ProtectedRoutes from "./ProtectedRoutes/ProtectedRoutes";
 
 export const router = createBrowserRouter([
     {
+        path: "/login",
+        element: <Login />
+
+    },
+    {
+        path: "/register",
+        element: <Register />
+
+    },
+
+    {
         path: "/",
-        element: <UserLayout />,
+        element: <ProtectedRoutes><UserLayout /></ProtectedRoutes>,
         children: [
             {
                 path: "/lessons",
-                element: <Lessons/>
+                element: <ProtectedRoutes> <Lessons /> </ProtectedRoutes>
             },
             {
-                path:"/lessons/lesson-no/:no",
-                element: <Vocabularies/>
+                path: "/lessons/lesson-no/:no",
+                element: <ProtectedRoutes><Vocabularies /></ProtectedRoutes>
             },
             {
                 path: "/tutorials",
-
-            },
-            {
-                path: "/login",
-
-            },
-            {
-                path: "/register",
 
             },
         ]
@@ -35,7 +42,7 @@ export const router = createBrowserRouter([
 
     {
         path: "dashboard",
-        children:[
+        children: [
             {
                 path: "Users"
             },

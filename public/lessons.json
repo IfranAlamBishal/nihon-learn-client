@@ -100,10 +100,10 @@
         "whenToSay": "Used to count or express the number three."
       },
       {
-        "word": "し",
-        "pronunciation": "Shi",
+        "word": "よん",
+        "pronunciation": "Yon",
         "meaning": "Four",
-        "whenToSay": "Used to count or express the number four."
+        "whenToSay": "Used to count or express the number four. 'Shi' can also be used but is less common."
       },
       {
         "word": "ご",
@@ -116,6 +116,90 @@
         "pronunciation": "Roku",
         "meaning": "Six",
         "whenToSay": "Used to count or express the number six."
+      },
+      {
+        "word": "なな",
+        "pronunciation": "Nana",
+        "meaning": "Seven",
+        "whenToSay": "Used to count or express the number seven. 'Shichi' can also be used but is less common."
+      },
+      {
+        "word": "はち",
+        "pronunciation": "Hachi",
+        "meaning": "Eight",
+        "whenToSay": "Used to count or express the number eight."
+      },
+      {
+        "word": "きゅう",
+        "pronunciation": "Kyuu",
+        "meaning": "Nine",
+        "whenToSay": "Used to count or express the number nine. 'Ku' can also be used but is less common."
+      },
+      {
+        "word": "じゅう",
+        "pronunciation": "Juu",
+        "meaning": "Ten",
+        "whenToSay": "Used to count or express the number ten."
+      },
+      {
+        "word": "じゅういち",
+        "pronunciation": "Juuichi",
+        "meaning": "Eleven",
+        "whenToSay": "Used to count or express the number eleven."
+      },
+      {
+        "word": "じゅうに",
+        "pronunciation": "Juuni",
+        "meaning": "Twelve",
+        "whenToSay": "Used to count or express the number twelve."
+      },
+      {
+        "word": "じゅうさん",
+        "pronunciation": "Juusan",
+        "meaning": "Thirteen",
+        "whenToSay": "Used to count or express the number thirteen."
+      },
+      {
+        "word": "じゅうよん",
+        "pronunciation": "Juuyon",
+        "meaning": "Fourteen",
+        "whenToSay": "Used to count or express the number fourteen. 'Juushi' can also be used but is less common."
+      },
+      {
+        "word": "じゅうご",
+        "pronunciation": "Juugo",
+        "meaning": "Fifteen",
+        "whenToSay": "Used to count or express the number fifteen."
+      },
+      {
+        "word": "じゅうろく",
+        "pronunciation": "Juuroku",
+        "meaning": "Sixteen",
+        "whenToSay": "Used to count or express the number sixteen."
+      },
+      {
+        "word": "じゅうなな",
+        "pronunciation": "Juunana",
+        "meaning": "Seventeen",
+        "whenToSay": "Used to count or express the number seventeen. 'Juushichi' can also be used but is less common."
+      },
+      {
+        "word": "じゅうはち",
+        "pronunciation": "Juuhachi",
+        "meaning": "Eighteen",
+        "whenToSay": "Used to count or express the number eighteen."
+      },
+      {
+        "word": "じゅうきゅう",
+        "pronunciation": "Juukyuu",
+        "meaning": "Nineteen",
+        "whenToSay": "Used to count or express the number nineteen. 'Juuku' can also be used but is less common."
+      },
+      {
+        "word": "にじゅう",
+        "pronunciation": "Nijuu",
+        "meaning": "Twenty",
+        "whenToSay": "Used to count or express the number twenty."
       }
     ]
   },

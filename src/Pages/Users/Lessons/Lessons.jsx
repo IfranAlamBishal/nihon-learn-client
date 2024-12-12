@@ -23,7 +23,7 @@ const Lessons = () => {
                 <Helmet>
                     <title>日本 Learn | Lessons</title>
                 </Helmet>
-                <span className="loading loading-infinity w-36 text-[#D72638]"></span>
+                <span className="loading loading-infinity w-40 text-[#D72638]"></span>
             </div>
         );
     }
@@ -38,7 +38,7 @@ const Lessons = () => {
 
                 <h1 className=" text-2xl text-[#3C3C3C] font-semibold my-5"> Total Lessons: {lessons.length}</h1>
 
-                <div className=" grid grid-cols-1 md:grid-cols-2 gap-6 py-5">
+                <div className=" grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-20 py-5">
                     {
                         lessons.map(lesson => <LessonCard key={lesson.lessonNumber} lesson={lesson}></LessonCard>)
                     }

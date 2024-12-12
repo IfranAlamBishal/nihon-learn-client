@@ -1,6 +1,32 @@
-import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { AuthContext } from "../../Provider/AuthProvider";
+import Swal from "sweetalert2";
 
 const Nav = () => {
+
+    const { logOut } = useContext(AuthContext);
+    const navigate = useNavigate();
+
+    const handleLogOut = () => {
+        logOut()
+            .then(() => {
+                Swal.fire({
+                    title: "Logged out!",
+                    text: "You've successfully logged out.",
+                    icon: "success"
+                });
+                
+            })
+            .catch(error => {
+                Swal.fire({
+                    icon: "error",
+                    title: "Sorry !",
+                    text: error.massage,
+                });
+                navigate('/login')
+            })
+        }
 
     const navBtns = <>
         <li><Link to='/lessons'>Lessons</Link></li>
@@ -40,7 +66,7 @@ const Nav = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <Link className="btn btn-error text-white text-base font-semibold">Log out</Link>
+                    <Link onClick={handleLogOut} className="btn btn-error text-white text-base font-semibold">Log out</Link>
                 </div>
             </div>
         </div>
