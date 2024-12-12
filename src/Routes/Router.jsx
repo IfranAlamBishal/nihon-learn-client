@@ -8,8 +8,13 @@ import Register from "../Pages/Register/Register";
 import Login from "../Pages/LogIn/Login";
 import ProtectedRoutes from "./ProtectedRoutes/ProtectedRoutes";
 import AdminLayout from "../Layouts/Admin/AdminLayout";
+import AdminRoutes from "./AdminRoutes/AdminRoutes";
 
 export const router = createBrowserRouter([
+    {
+        path: "*",
+        element: <Login />
+    },
     {
         path: "/login",
         element: <Login />
@@ -42,7 +47,7 @@ export const router = createBrowserRouter([
 
     {
         path: "dashboard",
-        element: <AdminLayout />,
+        element: <AdminRoutes><AdminLayout /></AdminRoutes>,
         children: [
             {
                 path: "users"
